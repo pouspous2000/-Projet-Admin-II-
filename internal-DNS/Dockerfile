@@ -13,3 +13,5 @@ RUN apt-get update \
 && cp named.conf.local /etc/bind/name.conf.local \
 && cp named.conf.options /etc/bind/name.conf.options \
 && cp db.l2-9.ephec-ti.be /etc/bind/zones/db.l2-9.ephec-ti.be \
+
+EXPOSE 53
