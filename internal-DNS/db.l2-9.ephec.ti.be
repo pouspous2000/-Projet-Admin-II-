@@ -15,8 +15,8 @@ l2-9.ephec-ti.be       IN      NS      ns1.l2-9.ephec-ti.be.
 
 ;RR SRV
 
-_sip._udp      86400     IN      SRV    20     1     5060  voip.l2-9.ephec-ti.be  ; TTL IN SRV PRIORITY WEIGHT PORT
-_sip._tcp      86400     IN      SRV    20     1     5060  voip.l2-p.ephec-ti.be   
+_sip._udp.woodytoys.be      86400     IN      SRV    20     1     5060  voip.l2-9.ephec-ti.be  ; TTL IN SRV PRIORITY WEIGHT PORT
+_sip._tcp.woodytoys.be      86400     IN      SRV    20     1     5060  voip.l2-p.ephec-ti.be   
  
 ;name servers - A records
 ns1          IN      A       
