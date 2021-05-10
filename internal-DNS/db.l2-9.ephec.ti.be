@@ -13,8 +13,8 @@ $TTL    604800
 l2-9.ephec-ti.be       IN      NS      ns1.l2-9.ephec-ti.be.
 
 ;mail server - MX records
-@             IN        MX     10     mail.l2-9.ephec-ti.be
-@             IN        MX     20     mail2.l2-9.ephec-ti.be
+@             IN        MX     10     mail.l2-9.ephec-ti.be.
+@             IN        MX     20     mail2.l2-9.ephec-ti.be.
 
 ;RR SRV
 
