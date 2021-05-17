@@ -1,5 +1,5 @@
 zone "l2-9.ephec-ti.be" {
     type master;
-    file "/etc/bind/zones/db.l2-9.ephec-ti.be";
+    file "/etc/bind/db.l2-9.ephec-ti.be";
     // allow-tansfer { DNS2 } add if secondary dns server
 };
