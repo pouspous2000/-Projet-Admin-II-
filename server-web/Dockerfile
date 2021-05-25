@@ -1,8 +1,10 @@
+#installation apache2 
 FROM ubuntu:latest
 RUN apt-get update 
 RUN apt-get install -y tzdata 
 RUN apt-get install -y apache2
 
+#modification des fichier de configuration pour le site statique
 RUN mkdir -p /var/www/html
 COPY woodytoys.be.conf /etc/apache2/sites-available/000-default.conf
 COPY index.html /var/www/html
