@@ -5,6 +5,8 @@ services:
       context: ./php
       dockerfile: Dockerfile
     container_name: php73
+    depends_on:
+      - db
     volumes:
       - ./php:/var/www/html/
     ports:
@@ -19,7 +21,7 @@ services:
     environment: 
       MYSQL_ROOT_PASSWORD: root 
       MYSQL_DATABASE: db_woody
-      MYSQL_USER: nono
-      MYSQL_PASSWORD: mysql
+      MYSQL_USER: b2b
+      MYSQL_PASSWORD: woody
     ports:
       - 6033:3306
