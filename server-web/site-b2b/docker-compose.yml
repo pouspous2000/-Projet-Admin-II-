@@ -9,8 +9,6 @@ services:
       - db
     volumes:
       - ./php:/var/www/html/
-    extra_hosts: 
-      - "b2b.l2-9.ephec-ti.be:127.0.0.1"
     ports:
       - 8000:80
 
