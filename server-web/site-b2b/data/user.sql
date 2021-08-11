@@ -8,4 +8,6 @@ CREATE TABLE users(
 )ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 INSERT INTO users (id, nom, email, mdp)
-VALUES ('1', 'admin', 'admin@woody.be','woody');
+VALUES ('1', 'admin', 'admin@woody.be','woody'),
+        ('2', 'noelle', 'noelle@hghghg', 'lol'),
+        ('3', 'noello', 'noello@hghghg', 'looool');
