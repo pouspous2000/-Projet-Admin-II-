@@ -11,3 +11,6 @@ INSERT INTO users (id, nom, email, mdp)
 VALUES ('1', 'admin', 'admin@woody.be','woody'),
         ('2', 'noelle', 'noelle@hghghg', 'lol'),
         ('3', 'noello', 'noello@hghghg', 'looool');
+
+
+

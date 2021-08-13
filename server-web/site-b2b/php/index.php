@@ -1,5 +1,6 @@
 <?php
-$host= 'db';
+include('connect_db.php');
+/*$host= 'db';
 $user="b2b";
 $password="woody";
 $db ="db_woody";
@@ -9,7 +10,10 @@ if ($conn -> connect_error){
     echo 'connection failed' . $conn->connect_error;
 }
 $result = mysqli_query($conn,"SELECT * FROM users");
+$affich = mysqli_query($conn, "INSERT INTO users values ('', '$u_nom','$u_email', '$u_mdp')");
+*/
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -39,6 +43,30 @@ while($row = mysqli_fetch_array($result)) {
 }
 ?>
 </table>
+
+<h2>Ajouter des coordonnés</h2>
+<form method="POST" action="">
+  Nom: <input type="text" name="nom"/><br />
+  Email: <input type="text" name="email"/><br />
+  mdp : <input type="password" name="mdp"/><br />
+  <input type="submit" value="submit" name="submit"/>
+
+  <?php
+  /*
+    if (isset($_POST['submit'])){
+      $u_nom = $_POST["nom"];
+      $u_email = $_POST["email"];
+      $u_mdp = $_POST["mdp"];
+
+
+      $statement = $conn->prepare("INSERT INTO users (nom, email, mdp) VALUES (?, ?, ?)");
+      $statement->bind_param('sss', $u_nom, $u_email, $u_mdp );
+    
+    }
+   */ 
+  ?>
+  
+</form>
 
  </body>
 </html>
